@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #fce4ec;
+    margin: 0;
+    position: relative;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #f06292;
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #ba68c8;
+    color: white;
+    border: none;
+    border-radius: 25px;
+}
+
+.rabbit {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    width: 120px;
+}
+
+.cat {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    width: 100px;
+    animation: tilt 2s infinite ease-in-out;
+}
+
+@keyframes tilt {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+}
